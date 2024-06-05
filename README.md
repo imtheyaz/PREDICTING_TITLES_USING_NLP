@@ -16,7 +16,7 @@ Please download all the files from here https://drive.google.com/drive/folders/1
 
 
 <div style="text-align: center;">
-  <img src="https://github.com/imtheyaz/PREDICTING_TITLES_USING_NLP/assets/107297530/e3621d51-a3da-4606-bff1-8c700829167c" alt="Predict_Page" width="400"/>
+  <img src="https://github.com/imtheyaz/PREDICTING_TITLES_USING_NLP/assets/107297530/e3621d51-a3da-4606-bff1-8c700829167c" alt="Predict_Page" width="1000"/>
 </div>
 
 
