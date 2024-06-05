@@ -14,6 +14,10 @@ Please download all the files from here https://drive.google.com/drive/folders/1
 
 ![Result_Page](https://github.com/imtheyaz/PREDICTING_TITLES_USING_NLP/assets/107297530/2f91c1c0-2551-4b39-aeaa-de457de771d5)
 
+
+<img src="https://github.com/imtheyaz/PREDICTING_TITLES_USING_NLP/assets/107297530/e3621d51-a3da-4606-bff1-8c700829167c" alt="Predict_Page" width="400"/>
+
+
  
 
 
