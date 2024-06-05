@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Home_images/tg_logo.png')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict_Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans:wght@100&family=Poppins:wght@200&family=Roboto+Mono:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+body{
+    text-align: center;
+}
+.inputtextbox{
+    width: 760px;
+    height:305px;
+    background-color: lightgrey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    border-radius: 5px;
+    position:absolute;
+    top:37%;
+    left:40%;
+}
+.inputtextbox span{
+    position:absolute;
+    left:0;
+    padding:10px;
+    pointer-events:none;
+    color:rgba(255,255,255,0.25);
+    text-transform:uppercase;
+    transition:0.5s;
+}
+.inputBox input:valid ~span,
+.inputBox input:focus ~span{
+    color:#ABC33D;
+    transform:translateX(10px) translateY(-7px);
+    font-size:0.65em;
+    padding:0 10px;
+    background:#fff;
+}
+.hrtag{
+    border-top: 1px solid red;
+    max-width: 523px;
+    position:absolute;
+    top:20%;
+    left:45%;
+}
+.banner{
+    width: 100%;
+	height: 100vh;
+	background-image: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148817571.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.btn{
+    border-radius: 10px;
+    background-color:#ABC33D;
+    border: none;
+    color:#000;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:absolute;
+    left:63%;
+    top:87%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.btn:hover{
+	-webkit-transform: scale(1.1);
+	transform:scale(1.1);
+}
+
+.head{
+    position:absolute;
+    top:7%;
+    left:33%;
+    justify-content: center;
+    align-items:center;
+    font-size:70;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+}
+.head2{
+    position:absolute;
+    top:40%;
+    left:23%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:85;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sidearrow{
+    top:51%;
+    left:25%;
+    position:absolute;
+}
+.back{
+	position: absolute;
+	top:5%;
+	left:2%;
+}
+.back:hover{
+	-webkit-transform: scale(1.1);
+	transform:scale(1.1);
+}
+    </style>
+</head>
+<body>
+    <section class="banner">
+    </section>
+    <u>
+        <div class="back">
+            <a href="{{ url_for('home') }}">
+            <img
+              src="{{ url_for('static', filename='back.jpeg')}}"
+              width="50"
+              height="50"
+            />
+            </a>
+          </div>  
+    <div class="head"><h1>GENERATE YOUR OWN TITLE</h1></div></u>
+    <hr class="hrtag">
+    <div class="sidearrow">
+        <img src="https://media4.giphy.com/media/Y3vWGN9YJFsPYYes9z/100.webp?cid=ecf05e47a62nbdn0ya2xyyaef36qn3je5v36iz3m5vf63kc0&rid=100.webp&ct=s" width="145" height="145">
+    </div>
+    <form action="/" method="post">
+        <div class="head2"><h1>Paste Your<br>Abstract Here</h1></div><br>
+        <textarea class="inputtextbox" name="abstract" required></textarea><br>
+        <input type="submit" class="btn" value="PREDICT TITLE">
+      </form> 
+</body>
+</html>

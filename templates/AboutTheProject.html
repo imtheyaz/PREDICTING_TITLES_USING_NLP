@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Home_images/tg_logo.png')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_The_Project_Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans:wght@100&family=Poppins:wght@200&family=Roboto+Mono:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+body{
+    text-align: center;
+}
+.banner{
+    width: 100%;
+	height: 100vh;
+	background-image: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148817571.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.back{
+	position: absolute;
+	top:5%;
+	left:2%;
+}
+.back:hover{
+	-webkit-transform: scale(1.1);
+	transform:scale(1.1);
+}
+.head{
+    position:absolute;
+    top:7%;
+    left:41%;
+    justify-content: center;
+    align-items:center;
+    font-size:75;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.text{
+  background-color: lightgrey;
+  width: 600px;
+  border: 5px;
+  border-color:#abc33a;
+  border-style:double;
+  padding: 50px;
+  margin: 20px;
+  top:23%;
+  left:8%;
+  position:absolute;
+  font-size: 30;
+  text-align: justify;
+}
+.matter{
+    position:absolute;
+    top:15%;
+    left:5%;
+    font-size:10;
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.archi_head{
+    position:absolute;
+    top:89%;
+    left:5%;
+    font-size:10;
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.archu_image{
+    position:absolute;
+    top:99%;
+    left:9%;
+    border: 5px;
+    border-color: #abc33a;
+    border-style:double;
+}
+.exp_head{
+    position:absolute;
+    left:5%;
+    top:160%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:left;
+    font-size: 10;
+}
+.gen{
+    position:absolute;
+    top:90%;
+    left:42%;
+    background: #ABC33D;
+	padding:15px;
+	width:300px;
+	text-align:center;
+	color: #000;
+	text-decoration: none;
+	border-radius: 5px;
+    font-size: 25;
+	font-weight: bold;
+}
+.gen:hover{
+	-webkit-transform: scale(1.1);
+	transform:scale(1.1);
+}
+    </style>
+</head>
+<body>
+    <section class="banner">
+    </section>
+    <u>
+        <div class="back">
+            <a href="{{ url_for('home') }}">
+            <img
+              src="{{ url_for('static', filename='back.jpeg')}}"
+              width="50"
+              height="50"
+            />
+        </a>
+          </div>    
+    <div class="head"><h1>ABOUT OUR PROJECT</h1></div></u>
+    <div class="matter"><h2>Core Idea Behind Our Project :</h2></div>
+    <div class="text">Our proposed model is a Seq2Seq Model that has been finetuned from T5-base and is capable of generating titles for your machine learning papers using the abstract. To train our model, we utilized a subset of the arXiv dataset, which has been categorized in the cs.AI category and consists of 40,000 articles. The proposed system offers several benefits, including the ability to model long-range dependencies, parallel processing, and effectiveness at capturing complex relationships.
+        <br><br><b>Software requirements</b><br>
+        <ul><li>Python:Python is a deciphered, significant level, broadly useful programming language.</li>
+            <li>Flask:Flask is a a web application framework written in python, in simple terms it helps end users interact with your python code (in this case our ML models) directly from their web browser without needing any libraries, code files.<br></li>
+            <li>Jupyter Notebook: Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations.<br></li></ul>
+
+    </div>
+    <a href="{{ url_for('examples') }}" class="gen">SOME SOLVED EXAMPLES</a>
+</body>
+</html>
